@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="styles.css">
+    <title>Encuesta</title>
+</head>
+<body>
+    <h1 id="title">Encuesta</h1>
+    <p id="description">Por favor, completa la siguiente encuesta acerca del uso del celular</p>
+    <form id="survey-form">
+        
+            <div class="item">
+                <label for="name" id="name-label">Nombre</label>
+                <input type="text" id="name" name="name" required placeholder="Ingrese su nombre">
+            </div>
+           <div class="item">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Ingrese su email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+           </div>
+           <div class="item">
+                <label for="number" id="number-label">Edad (opcional)</label>
+                <input type="number" id="number" name="number" min="1" max="100" placeholder="Ingrese su edad">
+           </div>
+        
+        <div class="item">
+            <label for="dropdown" id="dropdown-label">Actualmente, ¿tiene celular?</label>
+            <select id="dropdown" name="dropdown">
+                <option value="opcion1">Si</option>
+                <option value="opcion2">No</option>
+            </select> 
+        </div>
+        
+        <div class=" item">
+            <div>
+                <label class="question">¿Cuantas horas del dia le destina al uso del celular?</label>
+            </div>
+            <div>
+                <input type="radio" id="opcion1" name="opcion" value="opcion1">
+                <label for="opcion1">Menos de 1 hora al dia</label>
+            </div>
+            <div>
+                <input type="radio" id="opcion2" name="opcion" value="opcion2">
+                <label for="opcion2">Menos de 2 horas al dia</label>
+            </div>
+            <div>
+                <input type="radio" id="opcion1" name="opcion" value="opcion3">
+                <label for="opcion1">Mas de 3 horas al dia</label>
+            </div>
+            
+        
+        </div>
+        <div class=" item">
+            <div>
+                <label class="question">¿Que usos le da al celular?:</label>
+            </div>
+            <div>
+                <input type="checkbox" id="opcionA" name="opciones[]" value="opcionA">
+                <label for="opcionA">Para recibir y realizar llamadas</label>
+            </div>
+            <div>
+                <input type="checkbox" id="opcionB" name="opciones[]" value="opcionB">
+                <label for="opcionB">Para recibir y enviar mensajes</label>
+            </div>
+            <div>
+                <input type="checkbox" id="opcionC" name="opciones[]" value="opcionC">
+                <label for="opcionC">Redes Sociales</label>
+            </div>
+            <div>
+                <input type="checkbox" id="opcionD" name="opciones[]" value="opcionD">
+                <label for="opcionD">Trabajo</label>
+            </div>
+            <div>
+                 <input type="checkbox" id="opcionE" name="opciones[]" value="opcionE">
+                <label for="opcionE">Otros</label>
+            </div>
+        
+        
+       
+        
+        </div>
+      
+        
+        <label for="comments">Comentarios adicionales:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Escribe tus comentarios aquí"></textarea>
+        
+        <button type="submit" id="submit">Enviar</button>
+    </form>
+</body>
+</html>
